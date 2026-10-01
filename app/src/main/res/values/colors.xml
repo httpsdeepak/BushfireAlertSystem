@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Bushfire App Theme Colors (Default is Light) -->
+    <color name="bg_dark">#E8EAF1</color>
+    <color name="bg_card">#F9FAFB</color>
+    <color name="bg_input">#F0F2F5</color>
+    <color name="border_input">#D1D5DB</color>
+    
+    <color name="primary_orange">#E67E22</color>
+    <color name="accent_yellow">#F1C40F</color>
+    <color name="danger_red">#E74C3C</color>
+    <color name="text_main">#1E1F26</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="teal_accent">#48C9B0</color>
+
+    <color name="rating_low">#27AE60</color>
+    <color name="rating_mod">#F1C40F</color>
+    <color name="rating_high">#E67E22</color>
+    <color name="rating_ext">#D35400</color>
+    <color name="rating_cat">#C0392B</color>
+</resources>

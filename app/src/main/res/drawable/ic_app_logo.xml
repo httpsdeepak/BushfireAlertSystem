@@ -1,0 +1,55 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Outer Black Background (Triangle Border) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M100,10 L195,175 Q198,185 185,185 L15,185 Q2,185 5,175 L100,10 Z" />
+
+    <!-- Main Amber/Yellow Triangle Gradient -->
+    <path android:pathData="M100,22 L182,172 Q185,178 175,178 L25,178 Q15,178 18,172 L100,22 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="100" android:startY="22" android:endX="100" android:endY="178" android:type="linear">
+                <item android:color="#FFD54F" android:offset="0" />
+                <item android:color="#FF8F00" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Central Black Circle -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M100,118m-56,0a56,56 0,1,1 112,0a56,56 0,1,1 -112,0" />
+
+    <!-- Inner White Glowing Ring -->
+    <path
+        android:pathData="M100,118m-53,0a53,53 0,1,1 106,0a53,53 0,1,1 -106,0"
+        android:strokeWidth="2"
+        android:strokeColor="#DDFFFFFF" />
+
+    <!-- Flame Tongues -->
+    <path android:pathData="M100,70 Q135,100 135,140 Q135,165 100,170 Q65,165 65,140 Q65,100 100,70">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="100" android:startY="70" android:endX="100" android:endY="170" android:type="linear">
+                <item android:color="#FFF176" android:offset="0" />
+                <item android:color="#FF8F00" android:offset="0.5" />
+                <item android:color="#D84315" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Forest Silhouette -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M44,165 L55,145 L52,145 L62,130 L72,145 L68,145 L80,125 L92,145 L88,145 L105,115 L122,145 L118,145 L135,128 L148,145 L145,145 L156,165 Q100,185 44,165 Z" />
+
+    <!-- Sparks/Embers -->
+    <path android:fillColor="#FFC107" android:pathData="M60,110 h1.5 v1.5 h-1.5 z" />
+    <path android:fillColor="#FFD54F" android:pathData="M140,95 h1.5 v1.5 h-1.5 z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M100,55 h1 v1 h-1 z" />
+
+</vector>

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Your logo placed inside the safe zone (66dp center) -->
+    <group
+        android:translateX="13"
+        android:translateY="13">
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,0h82v82h-82z" />
+        <!-- This is a placeholder that tells Android to draw the bitmap here -->
+        <!-- In actual production, Android Studio's 'Image Asset' tool is used to generate mipmaps -->
+    </group>
+    
+</vector>

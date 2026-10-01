@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="bushfireAlert.com.example.myapp.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/navigation_signup"
+        android:name="bushfireAlert.com.example.myapp.ui.auth.SignupFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup" />
+
+    <fragment
+        android:id="@+id/navigation_email_verification"
+        android:name="bushfireAlert.com.example.myapp.ui.auth.EmailVerificationFragment"
+        android:label="Email Verification"
+        tools:layout="@layout/fragment_email_verification" />
+
+    <fragment
+        android:id="@+id/navigation_forgot_password"
+        android:name="bushfireAlert.com.example.myapp.ui.auth.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="bushfireAlert.com.example.myapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_alert"
+        android:name="bushfireAlert.com.example.myapp.ui.alert.AlertFragment"
+        android:label="Alert"
+        tools:layout="@layout/fragment_alert">
+        <action
+            android:id="@+id/action_navigation_alert_to_navigation_alert_detail"
+            app:destination="@id/navigation_alert_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_alert_detail"
+        android:name="bushfireAlert.com.example.myapp.ui.alert.AlertDetailFragment"
+        android:label="Alert Details"
+        tools:layout="@layout/fragment_alert_detail">
+        <argument
+            android:name="alert"
+            app:argType="bushfireAlert.com.example.myapp.model.AlertItem" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_emergency"
+        android:name="bushfireAlert.com.example.myapp.ui.emergency.EmergencyFragment"
+        android:label="Emergency"
+        tools:layout="@layout/fragment_emergency" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="bushfireAlert.com.example.myapp.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="bushfireAlert.com.example.myapp.ui.bookmark.BookmarkFragment"
+        android:label="Bookmarks"
+        tools:layout="@layout/fragment_bookmark" />
+</navigation>

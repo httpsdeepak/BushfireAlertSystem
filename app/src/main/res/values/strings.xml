@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bushfire Atert</string>
+    <string name="active_alerts_format">%1$d active alerts in your area</string>
+</resources>

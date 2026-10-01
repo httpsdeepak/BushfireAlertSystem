@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "451311693824",
+    "project_id": "bushfire-alert-final",
+    "storage_bucket": "bushfire-alert-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451311693824:android:0ed8764c216e3de593a8e5",
+        "android_client_info": {
+          "package_name": "bushfireAlert.com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1qbJMOa9PxkNLPQ6H_7Fq6BiCymwEdeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

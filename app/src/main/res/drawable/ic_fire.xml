@@ -1,0 +1,74 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- The Charred Bush / Base -->
+    <path
+        android:pathData="M40,160 Q60,140 80,165 Q100,130 125,160 Q150,145 170,170 L170,185 Q100,195 30,185 Z"
+        android:fillColor="#1A1110" /> <!-- Dark Burnt Color -->
+
+    <!-- Back Smoke / Heat Haze -->
+    <path
+        android:pathData="M60,140 Q100,40 140,140"
+        android:strokeWidth="20"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="100"
+                android:centerY="100"
+                android:gradientRadius="80"
+                android:type="radial">
+                <item android:color="#33E74C3C" android:offset="0" />
+                <item android:color="#00000000" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Main Flame Tongues (Going Up) -->
+    <!-- Left Tongue -->
+    <path android:pathData="M65,155 Q50,100 80,70 Q75,100 85,120 Q95,140 85,160 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startY="160" android:endY="70" android:type="linear">
+                <item android:color="#E74C3C" android:offset="0" />
+                <item android:color="#E67E22" android:offset="0.6" />
+                <item android:color="#F1C40F" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Large Tongue -->
+    <path android:pathData="M90,165 Q100,20 135,80 Q120,90 125,120 Q130,150 110,170 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startY="170" android:endY="20" android:type="linear">
+                <item android:color="#C0392B" android:offset="0" />
+                <item android:color="#E74C3C" android:offset="0.4" />
+                <item android:color="#F39C12" android:offset="0.8" />
+                <item android:color="#F1C40F" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Tongue -->
+    <path android:pathData="M130,160 Q160,110 140,85 Q150,110 145,130 Q140,150 155,165 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startY="165" android:endY="85" android:type="linear">
+                <item android:color="#E67E22" android:offset="0" />
+                <item android:color="#F1C40F" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Hot Core Base -->
+    <path android:pathData="M80,160 Q105,140 130,160 Q105,175 80,160 Z"
+        android:fillColor="#FEF9E7" />
+
+    <!-- Rising Sparks -->
+    <path android:fillColor="#F1C40F" android:pathData="M50,80 l2,2 l2,-2 l-2,-2 z" />
+    <path android:fillColor="#F1C40F" android:pathData="M160,60 l3,3 l3,-3 l-3,-3 z" />
+    <path android:fillColor="#E67E22" android:pathData="M110,30 l2,2 l2,-2 l-2,-2 z" />
+    <path android:fillColor="#E74C3C" android:pathData="M140,45 l2,2 l2,-2 l-2,-2 z" />
+
+</vector>
